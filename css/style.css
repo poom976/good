@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+ 
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(https://media.istockphoto.com/photos/open-book-and-steaming-cup-of-coffee-on-wooden-table-picture-id1334372779?b=1&k=20&m=1334372779&s=170667a&w=0&h=lfTulHKBslG9K9UFwiV6IaM9B5eRM7wIGgWYr-BNb9A=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-inner{
+    text-align: center;
+    max-width: 600px;
+}
+
+h1,p {
+    margin: 0;
+    color: #fff;
+     opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+}
+
+h1{
+    -webkit-animation: animateIn 1000ms ease  forwards;
+            animation: animateIn 1000ms ease  forwards;
+}
+
+p{
+    -webkit-animation: animateIn 1000ms ease 300ms forwards;
+            animation: animateIn 1000ms ease 300ms forwards;
+}
+
+@-webkit-keyframes animateIn{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+    }
+
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+
+}
+
+.poom{
+    text-align: center;
+}
